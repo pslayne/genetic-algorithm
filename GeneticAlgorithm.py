@@ -2,7 +2,6 @@ import convert
 import numpy as np
 from math import floor
 
-
 # standardizing binary chromosomes size
 def standard(binary):
     if len(binary) < 3:
@@ -10,16 +9,13 @@ def standard(binary):
         binary = rect + binary
     return binary
 
-
 # original function
 def f(x, y):
     return (x ** 3 + 2 * y ** 4) ** (1 / 2)
 
-
 # evaluating function
 def g(x, y):
     return 1 + f(x, y)
-
 
 def mutation(chromosome):
     r = ''
@@ -34,7 +30,6 @@ def mutation(chromosome):
 
     return r
 
-
 def prep_kids(kids):
     r = []
     for i in range(len(kids)):
@@ -47,7 +42,6 @@ def prep_kids(kids):
         })
 
     return r
-
 
 class GeneticAlgorithm:
     # constructor
