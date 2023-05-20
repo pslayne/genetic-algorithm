@@ -1,7 +1,7 @@
 import convert
 import numpy as np
 
-class genetic_algorithm:
+class GeneticAlgorithm:
     #construtor
     def __init__(self):
         pass
